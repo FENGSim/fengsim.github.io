@@ -1,16 +1,16 @@
 <style>
-  /* 隐藏原始标题 */
-  .header h1 {
+  .project-name {
     display: none;
   }
-  
-  /* 添加图片作为背景 */
-  .header {
-    background-image: url('{{ "../image/image1.svg" | relative_url }}');
+  .header::before {
+    content: "";
+    display: block;
+    background-image: url('{{ site.logo | default: "/assets/images/logo.png" }}');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 120px; /* 调整高度 */
-    text-indent: -9999px; /* 隐藏文字 */
+    height: {{ site.logo_height | default: "80px" }};
+    width: 100%;
+    margin-bottom: 20px;
   }
 </style>

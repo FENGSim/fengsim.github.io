@@ -1,3 +1,5 @@
+title: "FENGSim"
+logo: "./image/image1.svg"
 include: ["_includes"]
 description: "High-Fidelity Numerical Simulation and Adaptive Processing"
 show_downloads: true
