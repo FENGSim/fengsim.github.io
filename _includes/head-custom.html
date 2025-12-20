@@ -1,1 +1,19 @@
-<style>.page-header h1 {background:url('/image/image1.svg') center/contain no-repeat !important; height:80px; text-indent:-9999px;}</style>
+<style>
+/* 强力隐藏标题 */
+h1.page-title,
+.page-header h1,
+.project-name {
+    font-size: 0 !important;
+    color: transparent !important;
+    height: 80px !important;
+    width: 300px !important;
+    margin: 0 auto !important;
+    background: url('/image/image1.svg') center/contain no-repeat !important;
+}
+
+/* 确保.page-header显示正常 */
+.page-header {
+    padding-top: 40px !important;
+    min-height: 120px !important;
+}
+</style>
