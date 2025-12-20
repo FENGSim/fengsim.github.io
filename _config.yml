@@ -16,3 +16,4 @@ exclude:
   - framework
   - cli
   - docs
+include: ["_includes"]
